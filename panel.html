@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>ExtJs Test</title>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="ext-all.css">
+		<script src='ext-all.js'></script>
+		<script>
+			Ext.onReady(function()
+			{
+				var viewport = new Ext.Viewport({
+					layout:'border',
+					renderTo:Ext.getBody(),
+					items:[{
+						title:'北',
+						region:'north',
+						split:true,
+						border:true,
+						collapsible:true,
+						height:100,
+						minSize:100,
+						maxSize:120
+					},{
+						title:'south',
+						region:'south',
+						split:true,
+						border:true,
+						collapsible:true,
+						height:100,
+						minSize:100,
+						maxSize:120
+					},{
+						title:'east',
+						region:'east',
+						split:true,
+						border:true,
+						collapsible:true,
+						width:120,
+						minSize:120,
+						maxSize:200
+					},{
+						title:'west',
+						region:'west',
+						split:true,
+						border:true,
+						collapsible:true,
+						width:120,
+						minSize:120,
+						maxSize:200
+					},{
+						title:'center',
+						region:'center',
+						split:true,
+						border:true,
+						collapsible:true
+					}]
+				});
+			});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

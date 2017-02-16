@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>ExtJs Test</title>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="ext-all.css">
+		<script src='ext.js'></script>
+		<script src='ext-all.js'></script>
+		<script>
+			Ext.onReady(function()
+			{
+				var root=new Ext.tree.TreeNode({
+					id:'root',
+					text:'树的根'});
+				root.appendChild(new Ext.tree.TreeNode({
+					id:'c1',
+					text:'子节点2',})
+				);
+				root.appendChild(new Ext.tree.TreeNode({
+					id:'c2',
+					text:'子节点2'
+				}));
+				var tree=new Ext.tree.TreePanel({
+					renderTo:Ext.getBody(),
+					root:root,
+					width:100
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<center><h1>extJs test</h1></center>
+	</body>
+</html>
